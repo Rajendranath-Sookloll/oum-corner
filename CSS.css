@@ -1,0 +1,253 @@
+/* reset the CSS */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    padding-top: 70px;
+}
+
+/* Mau-Travel Text */
+.logo{
+    text-align: center;
+    color: lightseagreen; 
+}
+
+.logo h1{
+    font-family: 'Indie Flower', cursive;
+    font-size:60px;
+}
+.logo h5{
+    font-family: 'Indie Flower', cursive;
+    font-size:20px;
+    padding-bottom: 50px;
+}
+
+
+.logo img {
+    width: 100px;
+    display:block; 
+    margin-left:auto; 
+    margin-right:auto;
+    padding-bottom: 20px;
+}
+
+.hero_image img {
+    padding-top: 0px;
+    display:block; 
+    margin-left:auto; 
+    margin-right:auto;
+    width: 90%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.hero_image{
+    position: relative; /*relative wrt to absolute possiton of centered text inside image*/
+    text-align: center;
+}
+
+.centered_text_inside_image {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2vw; /* "1.2 vw" is used to size the text.  1.5vw will set the size to 1.2% of the viewport width.*/
+    font-weight: bold;
+    color: white;
+    background: rgba(102, 118, 119, 0.8); /*opacity of background=0.8*/
+    padding:15px;
+
+
+}
+
+/*Plan your Trip*/
+.planyourtrip{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    font-size: 30px;
+    color:lightseagreen; 
+    font-family: 'Euphoria Script', cursive;
+ }
+
+
+.image-1 img {
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.section_description{
+    text-align: justify;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.section_description h1 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    color: darkslategrey;
+}
+
+
+
+.exploreourtravelsstories{
+    color: gray;
+    text-align: left;
+    padding-bottom:20px;
+    padding-top: 100px;
+    font-weight:bolder;
+
+}
+.exploreourtravelsstories h2{
+    color:darkslategrey;
+    font-size:30px;
+    padding-bottom: 10px;
+}
+
+/*images 1st & 2nd row*/
+.images:hover{
+    border: 2px solid #777;
+}
+.images img {
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.postyourstories {
+    text-align: left;
+    padding-bottom:40px;
+    padding-top: 30px;
+}
+
+.button1{
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 10px;
+    text-align: centre; font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 10px 10px; 
+    margin: 10px;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+/*.contact{
+    margin-top: 20px;
+    background-color: white;
+    color:darkslategrey; 
+    font-family: 'Euphoria Script', cursive;
+    font-size: 40px;
+    text-align: center;
+}*/
+
+.mautravel_footer {
+    color: teal;
+    margin:10px;
+    padding-top: 70px;
+    font-family: 'Indie Flower', cursive;
+    font-size:30px;
+}
+
+.address{
+    margin: 20px;
+    text-align:left;
+}
+/*CONTACT*/
+.address h2 {
+    font-family: 'Antonio', sans-serif;
+    color: darkslategrey;
+}
+.address h4 {
+    font-family: 'Antonio', sans-serif;
+    color: darkslategray;
+}
+
+.subscribe{
+    margin: 10px;
+    text-align: left;
+}
+.subscribe h2{ 
+    color: darkslategrey;  
+    padding: 5px 5px; 
+    margin: 10px; 
+    font-family: 'Antonio', sans-serif;
+}
+.subscribe h5{
+    text-align: left; 
+    color: grey; 
+    background-color: white; 
+    border: 1px solid darkgrey; 
+    padding: 5px 5px; 
+    padding-bottom:20px; 
+    margin: 10px;
+}
+
+
+.button2{
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 10px;
+    text-align: centre; font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 10px 5px; 
+    margin: 10px;
+    width: 120px;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+ .copyright{
+     margin: 20px;
+ }
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box{
+    /*border: 1px solid #ccc;*/
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.col {
+    flex-grow: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    .row {
+        flex-direction: row;
+    }
+}
+
+.col-1-3 {
+    flex-grow: 1;
+}
+.col-2-3 {
+    flex-grow: 2;
+}
